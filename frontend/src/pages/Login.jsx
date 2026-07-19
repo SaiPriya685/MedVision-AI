@@ -30,9 +30,9 @@ function Login() {
         try{
 
             const response = await api.post(
-                "/auth/login",
-                formData
-            );
+    "/api/auth/login",
+    formData
+);
 
 
             localStorage.setItem(
