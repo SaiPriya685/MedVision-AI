@@ -3,4 +3,8 @@ node_modules/
 venv/
 __pycache__/
 uploads/
-*.pyc
+
+ai-model/venv/
+ai-model/*.h5
+*.h5
+*.pth
