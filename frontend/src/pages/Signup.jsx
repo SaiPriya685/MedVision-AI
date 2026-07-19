@@ -38,9 +38,16 @@ function Signup() {
 
             alert("Registration Successful");
             navigate("/login");
-        } catch (err) {
-            alert(err.response?.data?.message || "Registration Failed");
-        }
+        } catch (error) {
+            console.log(error);
+    alert(
+        JSON.stringify({
+            status: error.response?.status,
+            data: error.response?.data,
+            message: error.message
+        })
+    );
+}
     };
 
     return (

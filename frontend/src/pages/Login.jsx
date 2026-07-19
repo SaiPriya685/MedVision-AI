@@ -54,14 +54,17 @@ function Login() {
 
 
         }
-        catch(error){
+        catch (error) {
+    console.log(error);
 
-            alert(
-                error.response?.data?.message ||
-                "Login Failed"
-            );
-
-        }
+    alert(
+        JSON.stringify({
+            status: error.response?.status,
+            data: error.response?.data,
+            message: error.message
+        })
+    );
+}
 
     };
 
