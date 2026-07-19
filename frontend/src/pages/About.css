@@ -1,0 +1,339 @@
+.about-page {
+
+    min-height:100vh;
+
+    background:#eef7ff;
+
+}
+
+
+
+.about-container {
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:50px 20px;
+
+}
+
+
+
+.about-container h1 {
+
+
+    text-align:center;
+
+
+    color:#2563eb;
+
+
+    font-size:40px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.intro {
+
+
+    text-align:center;
+
+
+    max-width:800px;
+
+
+    margin:auto;
+
+
+    color:#64748b;
+
+
+    font-size:20px;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+/* Cards */
+
+
+.about-card {
+
+
+    background:white;
+
+
+    margin-top:40px;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.1);
+
+
+}
+
+
+
+.about-card h2 {
+
+
+    text-align:center;
+
+
+    color:#1e40af;
+
+
+    margin-bottom:30px;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+/* Workflow */
+
+
+.workflow {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+.workflow div {
+
+
+    background:#f8fbff;
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.workflow div:first-child {
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.workflow h3 {
+
+
+    margin-top:15px;
+
+
+    color:#2563eb;
+
+
+}
+
+
+
+.workflow p {
+
+
+    color:#64748b;
+
+
+    margin-top:10px;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+/* Technology */
+
+
+.about-card ul {
+
+
+    list-style:none;
+
+
+    padding:0;
+
+
+}
+
+
+
+.about-card li {
+
+
+    background:#eff6ff;
+
+
+    padding:15px;
+
+
+    margin:12px 0;
+
+
+    border-radius:12px;
+
+
+    color:#374151;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+/* Disclaimer */
+
+
+.warning {
+
+
+    margin-top:40px;
+
+
+    background:#fff8e6;
+
+
+    border-left:6px solid orange;
+
+
+    padding:25px;
+
+
+    border-radius:15px;
+
+
+    font-size:20px;
+
+
+    color:#92400e;
+
+
+}
+
+
+
+.warning p {
+
+
+    margin-top:15px;
+
+
+    font-size:16px;
+
+
+    color:#78350f;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+
+    .about-container {
+
+
+        padding:30px 15px;
+
+
+    }
+
+
+
+    .about-container h1 {
+
+
+        font-size:30px;
+
+
+    }
+
+
+
+    .intro {
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+    .workflow {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+    .about-card {
+
+
+        padding:25px;
+
+
+    }
+
+
+}

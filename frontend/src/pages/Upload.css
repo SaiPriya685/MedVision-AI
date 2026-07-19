@@ -1,0 +1,204 @@
+.upload-page {
+
+    min-height:100vh;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#eef7ff;
+
+    padding:20px;
+
+}
+
+
+
+.upload-card {
+
+    width:100%;
+
+    max-width:500px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.12);
+
+}
+
+
+
+.upload-card h1 {
+
+    color:#2563eb;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.upload-card p {
+
+    color:#64748b;
+
+    margin-bottom:25px;
+
+    font-size:17px;
+
+}
+
+
+
+/* File Upload */
+
+
+.upload-card input[type="file"] {
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px dashed #93c5fd;
+
+    border-radius:15px;
+
+    background:#f8fbff;
+
+    cursor:pointer;
+
+}
+
+
+
+/* Image Preview */
+
+
+.preview-image {
+
+    width:100%;
+
+    max-width:300px;
+
+    height:300px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+    margin:25px auto;
+
+    display:block;
+
+    border:5px solid #dbeafe;
+
+}
+
+
+
+/* Button */
+
+
+.upload-card button {
+
+
+    width:100%;
+
+    padding:15px;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.upload-card button:hover {
+
+
+    background:#1d4ed8;
+
+
+}
+
+
+
+.upload-card button:disabled {
+
+
+    background:#94a3b8;
+
+    cursor:not-allowed;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
+
+    .upload-card{
+
+
+        padding:25px;
+
+    }
+
+
+
+    .upload-card h1{
+
+
+        font-size:26px;
+
+    }
+
+
+
+    .preview-image{
+
+
+        height:220px;
+
+    }
+
+
+}

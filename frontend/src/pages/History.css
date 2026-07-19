@@ -1,0 +1,175 @@
+.history-page {
+
+    min-height:100vh;
+
+    background:#eef7ff;
+
+    padding:40px 20px;
+
+}
+
+
+
+.history-page h1 {
+
+    text-align:center;
+
+    color:#2563eb;
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* Empty State */
+
+.history-page h3 {
+
+    text-align:center;
+
+    color:#64748b;
+
+    margin-top:50px;
+
+}
+
+
+
+
+/* History Card */
+
+
+.history-card {
+
+
+    width:100%;
+
+    max-width:450px;
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    margin:20px auto;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.history-card:hover {
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+.history-card h2 {
+
+
+    text-align:center;
+
+
+    color:#2563eb;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.history-card p {
+
+
+    font-size:16px;
+
+
+    color:#374151;
+
+
+    margin:12px 0;
+
+
+}
+
+
+
+
+/* Disease Badge */
+
+
+.history-card h2 {
+
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
+
+    .history-page {
+
+
+        padding:25px 15px;
+
+
+    }
+
+
+
+    .history-page h1 {
+
+
+        font-size:28px;
+
+
+    }
+
+
+
+    .history-card {
+
+
+        padding:20px;
+
+
+    }
+
+
+}
