@@ -62,13 +62,17 @@ res.json({
 
     } catch (error) {
 
-        console.error(error.message);
+    console.error(
+        "PREDICTION ERROR:",
+        error.response?.data || error.message
+    );
 
-        res.status(500).json({
-            message: "Prediction Failed",
-        });
+    res.status(500).json({
+        message: "Prediction Failed",
+        error: error.response?.data || error.message
+    });
 
-    }
+}
 
 });
 
