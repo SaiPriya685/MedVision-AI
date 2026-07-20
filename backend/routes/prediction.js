@@ -21,6 +21,8 @@ const upload = multer({ storage });
 router.post("/", upload.single("image"), async (req, res) => {
 
     try {
+        console.log("FILE RECEIVED:", req.file);
+        console.log("BODY:", req.body);
 
         const form = new FormData();
 
