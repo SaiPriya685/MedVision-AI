@@ -20,8 +20,8 @@ function Dashboard() {
   useEffect(() => {
     const getStats = async () => {
       try {
-        const response = await api.get(`/history/${user.id}`);
-
+        
+        const response = await api.get(`/api/history/${user.id}`);
         const data = response.data;
 
         const normal = data.filter(
@@ -40,8 +40,8 @@ function Dashboard() {
 
         setRecentScans(data.slice(0, 5));
       } catch (error) {
-        console.log(error);
-      }
+  console.log(error.response?.data || error.message);
+}
     };
 
     getStats();
