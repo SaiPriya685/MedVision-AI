@@ -19,9 +19,9 @@ const getHistory=async()=>{
 
 try{
 
-const response =
-await api.get(
-`/history/${user.id}`
+
+const response = await api.get(
+    `/api/history/${user.id}`
 );
 
 

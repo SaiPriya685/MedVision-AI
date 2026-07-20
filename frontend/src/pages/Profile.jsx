@@ -28,11 +28,10 @@ function Profile(){
 
             try{
 
-                const response =
-                await api.get(
-                    `/history/${user.id}`
-                );
-
+                
+                const response = await api.get(
+    `/api/history/${user.id}`
+);
 
                 const data=response.data;
 
