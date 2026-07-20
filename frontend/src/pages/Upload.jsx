@@ -74,14 +74,14 @@ formData.append(
 
 
             const response = await api.post(
-                "/predict",
-                formData,
-                {
-                    headers:{
-                        "Content-Type":"multipart/form-data"
-                    }
-                }
-            );
+    "/api/predict",
+    formData,
+    {
+        headers:{
+            "Content-Type":"multipart/form-data"
+        }
+    }
+);
 
 
 
