@@ -1,10 +1,17 @@
-node_modules/
-.env
+# Python
 venv/
 __pycache__/
-uploads/
+*.pyc
 
-ai-model/venv/
-ai-model/*.h5
+# Node
+node_modules/
+
+# ML models
 *.h5
-*.pth
+*.keras
+
+# Dataset
+ai-model/dataset/
+
+# Uploads
+ai-model/uploads/

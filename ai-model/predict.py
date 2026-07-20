@@ -1,9 +1,19 @@
 import numpy as np
+import os
+import numpy as np
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
+
+MODEL_PATH = os.path.join(
+    os.path.dirname(__file__),
+    "medvision_model.h5"
+)
+
+
 # Load model only once
-model = load_model("medvision_model.h5")
+model = load_model(MODEL_PATH)
 
 IMG_SIZE = 150
 

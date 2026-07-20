@@ -25,7 +25,7 @@ router.post("/", upload.single("image"), async (req, res) => {
         const form = new FormData();
 
         form.append(
-            "file",
+            "image",
             fs.createReadStream(req.file.path)
         );
 
