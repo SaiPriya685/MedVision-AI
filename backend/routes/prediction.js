@@ -30,12 +30,12 @@ router.post("/", upload.single("image"), async (req, res) => {
         );
 
         const response = await axios.post(
-            "http://127.0.0.1:8000/predict",
-            form,
-            {
-                headers: form.getHeaders(),
-            }
-        );
+    "https://medvision-ai-api-7skw.onrender.com/predict",
+    form,
+    {
+        headers: form.getHeaders(),
+    }
+);
 
         fs.unlinkSync(req.file.path);
 
