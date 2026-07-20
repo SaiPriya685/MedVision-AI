@@ -1,3 +1,23 @@
+const Prediction = require("../models/Prediction");
+const express = require("express");
+const router = express.Router();
+
+const multer = require("multer");
+const axios = require("axios");
+const FormData = require("form-data");
+const fs = require("fs");
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, "uploads/");
+    },
+    filename: function (req, file, cb) {
+        cb(null, Date.now() + "-" + file.originalname);
+    },
+});
+
+const upload = multer({ storage });
+
 router.post("/", upload.single("image"), async (req, res) => {
 
     try {
@@ -52,3 +72,5 @@ router.post("/", upload.single("image"), async (req, res) => {
     }
 
 });
+
+module.exports = router;
